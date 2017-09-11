@@ -36,6 +36,9 @@ h1, ul {
 }
 
 @media only screen and (max-width: 960px) {
+	h1{
+		text-align: center;
+	}
     #google {
     	float: none;
     }
