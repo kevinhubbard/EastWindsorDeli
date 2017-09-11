@@ -16,3 +16,17 @@ footer{
 	height: 60px;
 	text-align: center;
 }
+
+.google{
+	float: right;
+	margin-right: 10px;
+}
+
+
+#index{
+	display: inline-block;
+	margin-left: 25px;
+}
+h1, ul {
+	color: white;
+}
