@@ -54,14 +54,16 @@ app.get('/admin', function(req,res){
 	});
 });
 app.post('/order', urlencodedParser, function(req, res){
-	
-	console.log(req.body.special);
-	console.log(req.body.lunch);
+
 	console.log(req.body.breakfast);
+	console.log(req.body.lunch);
+	console.log(req.body.wraps);
+	console.log(req.body.burgers);
+	console.log(req.body.special);
 	console.log(req.body.name);
 	res.render('thankyou', {name: req.body.name});
 	
-	var query = "INSERT INTO ewdeli (Name, SpecialRequest) VALUES ('" + req.body.name + "', '" + req.body.special + "');";
+	var query = "INSERT INTO ewdeli (Name, SpecialRequest, Breakfast, Lunch, Burgers, Wraps) VALUES ('" + req.body.name + "', '" + req.body.special + "', '"+ req.body.breakfast +  "', '"+ req.body.lunch +  "', '"+ req.body.burgers +  "', '"+ req.body.wraps + "');";
 	console.log(query);
 	connection.query(query, function (error, results, fields) {
   		if (error) throw error;

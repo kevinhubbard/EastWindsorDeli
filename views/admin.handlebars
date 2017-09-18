@@ -1,11 +1,21 @@
 <div>
 	{{#each order}}
+	<div id='poop'>
 		<div style="display: block; color: white;">
 			<h3>Name: <span>{{this.Name}}</span></h3>
 		</div>
 		<div style="display: block; color: white;">
 			<h3>Request: <span>{{this.SpecialRequest}}</span></h3>
 		</div>
+		<button id="delete" >Delete</button>
 		<hr>
+	</div>
 	{{/each}}
 </div>
+
+<script type="text/javascript">
+
+	$('#delete').click(function(){
+		$('#poop').remove();
+	});
+</script>
