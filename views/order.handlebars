@@ -1,0 +1,89 @@
+<div class="container order">
+	<div id="items" class="row">
+		<div class="col-md-6">
+			<label for="breakfast">Breakfast</label>
+			<select name='breakfast' id='breakfast' multiple="multiple" form="order">
+				<option value="eggs">Eggs</option>
+				<option value="Bacon">Bacon</option>
+				<option value="pork roll">Pork roll</option>
+				<option value="pork sausage">Pork sausage</option>
+				<option value="beef sausage">Beef sausage</option>
+				<option value="homefries">Homefries</option>
+				<option value="pancakes">Pancakes</option>
+				<option value="plain Bagle">Plain Bagle</option>
+			</select>
+		</div>
+		<div class="col-md-6">
+			<label for="lunch">Hot/Cold Subs</label>
+			<select name="lunch" id='lunch' multiple="multiple" form="order">
+				<option value="roast beef">roast beef</option>
+				<option value="corned beef">corned beef</option>
+				<option value="virginia ham">virginia ham</option>
+				<option value="turkey">turkey</option>
+				<option value="salami">salami</option>
+				<option value="pepperoni">pepperoni</option>
+				<option value="Veal Parmigiana">Veal Parmigiana</option>
+				<option value="Eggplant Parmigiana">Eggplant Parmigiana</option>
+				<option value="Chicken Parmigiana">Chicken Parmigiana</option>
+				<option value="BBQ Beef">BBQ Beef</option>
+				<option value="Meatball Parmigiana">Meatball Parmigiana</option>
+				<option value="Cheese Steak">Cheese Steak</option>
+			</select>
+		</div>
+		<div class="col-md-6">
+			<label for="wraps">Wraps</label>
+			<select name="wraps" id='wraps' multiple="multiple" form="order">
+				<option value="roast beef">Roast Beef</option>
+				<option value="corned beef">Corned Beef</option>
+				<option value="virginia ham">Virginia Ham</option>
+				<option value="turkey">Turkey</option>
+				<option value="salami">Salami</option>
+				<option value="pepperoni">Pepperoni</option>
+				<option value="Bologna">Bologna</option>
+				<option value="Chicken Breast">Chicken Breast</option>
+				<option value="Tuna Salad">Tuna Salad</option>
+				<option value="Shrimp Salad">Shrimp Salad</option>
+				<option value="Chicken Salad">Chicken Salad</option>
+				<option value="Egg Salad">Egg Salad</option>
+			</select>
+		</div>
+		<div class="col-md-6">
+			<label for="burgers">Burgers</label>
+			<select name="burgers" id='burgers' multiple="multiple" form="order">
+				<option value="hamburger">Hamburger</option>
+				<option value="cheese burger">Cheese Burger</option>
+				<option value="chicken cheese burger">Chicken Cheese Burger</option>
+				<option value="Veggie Cheese Burger">Veggie Cheese Burger</option>
+				<option value="Salmon Burger">Salmon Burger</option>
+				<option value="California Cheese Burger">California Cheese Burger</option>
+			</select>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<form action="#" method="POST" id="order">
+				<div class="form-group">
+					<label for="special">Special Requests:</label>
+					<input class="form-control" id="special" type="text" name="special">
+				</div>
+				<div class="form-group">
+					<label for='customer'>Name:</label>
+					<input class="form-control" type="text" name="name">
+				</div>
+				<button type="submit">Order</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#breakfast').multiselect();
+		$('#lunch').multiselect();
+		$('#wraps').multiselect();
+		$('#burgers').multiselect();
+	});
+</script>
