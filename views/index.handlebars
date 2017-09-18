@@ -11,8 +11,17 @@
 		<li>Sun - Closed</li>
 	</ul>
 </div>
-<div id='google'><iframe
-	frameborder="0" style="border:0"
-	src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAVUmawnKn5NCZ6j46teq4zCaiiXz-gcns
-	&q=596+Old+Trenton+Rd,+East+Windsor,+NJ" allowfullscreen>
-</iframe></div>
+<div id="map"></div>
+<script>
+  function initMap() {
+    var uluru = {lat: 40.283969, lng: -74.564909};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
