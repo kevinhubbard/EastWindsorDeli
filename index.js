@@ -44,6 +44,10 @@ app.get('/order', function(req, res){
 	res.render('order');
 });
 
+app.get('/images', function(req, res){
+	res.render('images');
+});
+
 app.get('/admin', function(req,res){
 	var order = 'SELECT * FROM ewdeli';
 	connection.query(order, function(error, rows){

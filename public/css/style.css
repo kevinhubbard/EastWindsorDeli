@@ -47,6 +47,17 @@ label {
 	text-align: center;
 }
 
+.img {
+	width: 200px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+#images {
+	width: 50%;
+	margin: 0 auto;
+}
+
 @media only screen and (max-width: 1500px) {
     #map {
     	float: none;
