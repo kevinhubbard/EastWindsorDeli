@@ -4,6 +4,7 @@ html{
 }
 
 nav{
+	margin-top: 5px;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Times';
@@ -11,6 +12,7 @@ nav{
 nav a{
 	border: 2px solid lightblue;
 	padding: 5px;
+	border-radius: 15px;
 }
 
 a:hover{
@@ -66,6 +68,10 @@ label {
 	width: 50%;
 	margin: 0 auto;
 }
+
+.order{
+	margin: 0 auto;
+	width: 22%;
 
 @media only screen and (max-width: 900px) {
     #hours{
