@@ -1,10 +1,10 @@
 <div>
 	{{#each order}}
-	<div id='poop'>
-		<div style="display: block; color: white;">
+	<div id='order'>
+		<div style="display: block;">
 			<h3>Name: <span>{{this.Name}}</span></h3>
 		</div>
-		<div style="display: block; color: white;">
+		<div style="display: block;">
 			<h3>Request: <span>{{this.SpecialRequest}}</span></h3>
 		</div>
 		<button id="delete" >Delete</button>
@@ -15,7 +15,8 @@
 
 <script type="text/javascript">
 
-	$('#delete').click(function(){
-		$('#poop').remove();
-	});
+$('#delete').click(function(){
+	$('#order').remove();
+});
+
 </script>

@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/kevinhubbard/EastWindsorDeli#readme",
   "dependencies": {
-    "body-parser": "^1.18.1",
+    "body-parser": "^1.18.3",
     "bootstrap-multiselect": "^0.9.13-1",
-    "express": "^4.15.4",
+    "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "mysql": "^2.14.1"
+    "mysql": "^2.16.0"
   }
 }
