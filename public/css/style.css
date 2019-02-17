@@ -71,7 +71,7 @@ label {
 
 .order{
 	margin: 0 auto;
-	width: 22%;
+	width: 22%;}
 
 @media only screen and (max-width: 900px) {
     #hours{

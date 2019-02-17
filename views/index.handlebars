@@ -16,21 +16,15 @@
 </div>
 
 <script>
-  function initMap() {
-    var uluru = {lat: 40.283969, lng: -74.564909};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 17,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
+mapboxgl.accessToken = 'pk.eyJ1IjoiaHViYmFkdWJzIiwiYSI6ImNqczg2OGY4aDBnbHIzeXBhNnN6eXBndXAifQ.o1PkG0rEs7KwTKiMUx3jRw';
+var map = new mapboxgl.Map({
+container: 'map', // container id
+style: 'mapbox://styles/mapbox/streets-v9', // stylesheet location
+center: [-74.564946, 40.283908], // starting position [lng, lat]
+zoom: 10 // starting zoom
+});
+
+var marker = new mapboxgl.Marker()
+  .setLngLat([-74.564946, 40.283908])
+  .addTo(map);
 </script>
-
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgqR1LoQT7oupKfvFxi-SsgR5_7a7sKpQ&callback=initMap">
-</script>
-
-
