@@ -2,16 +2,27 @@ html{
 	position: relative;
 	min-height: 100%;
 }
-
-nav{
+img{
 	margin-top: 5px;
+}
+body{
+	margin-bottom: 75px;
+}
+.test{
+	padding: 20px 0px 20px 0px;
+}
+
+#index{
+	margin-bottom: 25px;
+}
+nav{
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Times';
 }
 nav a{
 	border: 2px solid lightblue;
-	padding: 5px;
+	padding: 5px 5px 5px 5px;
 	border-radius: 15px;
 }
 
@@ -19,71 +30,65 @@ a:hover{
 	background-color: lightblue;
 	color: white;
 }
-body{
-	padding-top: 65px;
-	margin-bottom: 60px;
-}
+
 footer{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
 	text-align: center;
-}
-#index{
-	width: 1920px;
-	height: 500px;
-}
-#hours{
-	text-align: right;
-	padding-right: 75px;
-}
-
-ul li{
-	list-style: none;
-}
-#map{
-	width: 500px;
-	height: 400px;
-}
-
-label {
-	color: blue;
+	background-color: lightgreen;
 }
 
 
-#items {
-	width: 360px;
-}
-#res{
-	text-align: center;
-}
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#map{
+		width: 100%;
+		height: 350px;
+	}
 
-.img {
-	width: 200px;
-	height: 150px;
-	margin-bottom: 10px;
-}
-
-#images {
-	width: 50%;
-	margin: 0 auto;
+	#hours{
+		text-align: center;
+	}
 }
 
-.order{
-	margin: 0 auto;
-	width: 22%;}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#map{
+		width: 100%;
+		height: 350px;
+	}
 
-@media only screen and (max-width: 900px) {
-    #hours{
-    	display: block;
-    	float: left;
-    	margin-left: 10px;
-    }
-    #map {
-    	display: block;
-    	width: 250px;
-        height: 250px;
-    }
-
+	#hours{
+		text-align: center;
+	}
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#map{
+		width: 100%;
+		height: 450px;
+	}
+
+	#hours{
+		text-align: center;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#map{
+		width: 550px;
+		height: 550px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#map{
+		width: 750px;
+		height: 750px;
+	}
+} 
