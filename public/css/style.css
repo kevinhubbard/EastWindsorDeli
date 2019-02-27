@@ -11,9 +11,16 @@ body{
 .test{
 	padding: 20px 0px 20px 0px;
 }
-
+#hours ul{
+	padding: 0;
+	list-style-type: none;
+}
 #index{
 	margin-bottom: 25px;
+}
+#images {
+	width: 50%;
+	margin: 0 auto;
 }
 nav{
 	text-align: center;
