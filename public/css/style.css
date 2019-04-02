@@ -10,6 +10,10 @@ img{
 body{
 	margin-bottom: 75px;
 }
+#logo{
+	width: 450px;
+	height: 300px;
+}
 .test{
 	padding: 20px 0px 20px 0px;
 }
