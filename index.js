@@ -25,7 +25,8 @@ connection.connect();
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/node_modules')));
 var urlencodedParser = bodyParser.urlencoded({ extended: false});
 
 app.get('/', function(req, res){

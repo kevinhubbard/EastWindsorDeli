@@ -4,6 +4,8 @@ html{
 }
 img{
 	margin-top: 5px;
+	width: 300px;
+	height: 300px;
 }
 body{
 	margin-bottom: 75px;
@@ -33,7 +35,7 @@ nav a{
 	border-radius: 15px;
 }
 
-a:hover{
+.link:hover{
 	background-color: lightblue;
 	color: white;
 }
